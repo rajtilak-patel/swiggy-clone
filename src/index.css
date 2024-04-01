@@ -9,13 +9,12 @@
     background-image: linear-gradient(to bottom , rgba(255,255,255,0) 70% , rgba(0,0,0,1));
 }
 
-
-  .sticky-wrapper {
+.sticky-wrapper {
     position: relative;
     height: 3rem; /* We need to change this value */
   }
   
-  .sticky .sticky-inner {
+.sticky .sticky-inner {
     position: fixed;
     top: 0;
     left: 0;

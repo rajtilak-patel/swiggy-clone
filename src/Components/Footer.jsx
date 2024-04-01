@@ -5,7 +5,7 @@ const Footer = () => {
     <div className='w-full h-[350px] bg-[#02060c] mx-auto p-3'>
         <div className='grid grid-cols-4 items-center mx-[250px] text-[16px]'>
            <div className='font-bold mb-2 w-[50%] text-white flex justify-center items-center'>
-             <SiSwiggy className=' mr-2 text-[80px]'/> <span> Swiggy</span> 
+             <SiSwiggy className=' mr-2 text-[90px]'/> <span> Swiggy</span> 
            </div>
            <div className=' font-bold mb-2 w-[50%] text-white'>
             Company
@@ -17,38 +17,35 @@ const Footer = () => {
              We deliver to:
            </div>
         </div>
-        <div className='grid grid-cols-4 items-center mx-[250px]'>
-            <div className='mt-[-120px] w-[50%] text-[#8a847b]'>
+        <div className='grid grid-cols-4 items-center mx-[250px] cursor-pointer'>
+            <div className='mt-[-160px] w-[50%] text-[#8a847b]'>
                <div>© 2024 Bundl Technologies Pvt. Ltd</div> 
+            </div>
+            <div className='w-[50%] text-[#8a847b] mt-[-50px]'>
+               <ul className='text-[15px]'>
+                <li className='py-1'>About</li>
+                <li className='py-1'>Careers</li>
+                <li className='py-1'>Team</li>
+                <li className='py-1'>Swiggy One</li>
+                <li className='py-1'>Swiggy Instamart</li>
+                <li className='py-1'>Swiggy Genie</li>
+               </ul>
+            </div>
+            <div className='mb-2 w-[50%] text-[#8a847b] mt-[-140px]'>
+               <ul className='text-[15px] '>
+                <li className='py-1'>Help & Support</li>
+                <li className='py-1'>Partner with us</li>
+                <li className='py-1'>Ride with us</li>
+               </ul>
             </div>
             <div className='w-[50%] text-[#8a847b]'>
                <ul className='text-[15px]'>
-                <li className='py-1'>About</li>
-                <li className='py-1'>Careers</li>
-                <li className='py-1'>Team</li>
-                <li className='py-1'>Swiggy One</li>
-                <li className='py-1'>Swiggy Instamart</li>
-                <li className='py-1'>Swiggy Genie</li>
-               </ul>
-            </div>
-            <div className='font-bold mb-2 w-[50%] text-[#8a847b]'>
-               <ul className='text-[15px] '>
-                <li className='py-1'>About</li>
-                <li className='py-1'>Careers</li>
-                <li className='py-1'>Team</li>
-                <li className='py-1'>Swiggy One</li>
-                <li className='py-1'>Swiggy Instamart</li>
-                <li className='py-1'>Swiggy Genie</li>
-               </ul>
-            </div>
-            <div className='font-bold mb-2 w-[50%] text-[#8a847b]'>
-               <ul className='text-[15px]'>
-                <li className='py-1'>About</li>
-                <li className='py-1'>Careers</li>
-                <li className='py-1'>Team</li>
-                <li className='py-1'>Swiggy One</li>
-                <li className='py-1'>Swiggy Instamart</li>
-                <li className='py-1'>Swiggy Genie</li>
+                <li className='py-1'>Bangalore</li>
+                <li className='py-1'>Gurgaon</li>
+                <li className='py-1'>Hyderabad</li>
+                <li className='py-1'>Delhi</li>
+                <li className='py-1'>Mumbai</li>
+                <li className='py-1'>Pune</li>
                </ul>
             </div>
             </div>
