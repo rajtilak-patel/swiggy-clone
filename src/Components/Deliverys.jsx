@@ -540,7 +540,6 @@ const Deliverys = () => {
   const ref = useRef(null);
   const handleScroll = () => {
     if (ref.current) {
-      console.log("hello")
       setSticky(ref.current.getBoundingClientRect().top <= 0);
     }
   };
@@ -561,30 +560,30 @@ const Deliverys = () => {
             Restaurants with online food delivery in Raipur
           </div>
         </div>
-        <div className={`${isSticky ? 'fixed top-0 z-[999999] bg-white w-[80%] ml-[-20px] mx-5' : ''}`} > 
+        <div className={`${isSticky ? 'fixed top-0 z-[999999] bg-white w-full md:w-[80%] ml-[-20px] mx-5' : ''}`} > 
            <div className="mx-auto flex my-4 text-[14px] target-element"  >
              <div className="p-2 rounded-md shadow-2xl border border-[1px]-black mx-2">Filter</div>
              <div className="p-2 rounded-md shadow-2xl border border-[1px]-black mx-2">Sort</div>
              <div className="p-2 rounded-md shadow-2xl border border-[1px]-black mx-2">Fast Delivery</div>
-             <div className="p-2 rounded-md shadow-2xl border border-[1px]-black mx-2">New on Swiggy</div>
+             {/* <div className="p-2 rounded-md shadow-2xl border border-[1px]-black mx-2">New on Swiggy</div>
              <div className="p-2 rounded-md shadow-2xl border border-[1px]-black mx-2">Rating 4.0+</div>
              <div className="p-2 rounded-md shadow-2xl border border-[1px]-black mx-2">Pure Veg</div>
-             <div className="p-2 rounded-md shadow-2xl border border-[1px]-black mx-2">Offer</div>
+             <div className="p-2 rounded-md shadow-2xl border border-[1px]-black mx-2">Offer</div> */}
 
            </div>
         </div>
-        <div className="grid grid-cols-4 gap-2">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 p-2 w-full">
           {food.map((data,index) => {
              return(
               <>
               <div key={index}>
-              <div key={index} className="group flex shrink-0 p-2  h-[180px] w-[250px] relative">
+              <div key={index} className="group flex shrink-0 p-2  md:h-[180px] md:w-[250px] relative">
                   <img
                     src={data.image}
                     alt={data.name}
                     className="group-hover:scale-110 duration-100 mx-auto w-full h-full gap-2 rounded-[15px] object-cover"
                   />
-                  <div className="image-overlay absolute w-full h-full top-0 rounded-[15px] flex items-end text-white font-bold text-[23px] tracking-tighter pl-2">
+                  <div className="image-overlay absolute w-full h-full top-0 rounded-[15px] flex items-end text-white font-bold text-[15px] md:text-[23px] tracking-tighter pl-2">
                     {data.cuisine} ₹{Math.floor(Math.random() * 100)} off
                   </div>
                 </div>

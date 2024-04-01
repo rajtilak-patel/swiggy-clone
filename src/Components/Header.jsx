@@ -46,11 +46,11 @@ const Header = () => {
 
   return (
     <>
-    <div className='black-overlay w-full h-full fixed duration-400 z-[999999999]' onClick={hideSideMenu} style={{opacity:toggle?1:0, visibility:toggle?'visible':'hidden'}}>
-        <div className='w-[480px] h-full bg-white absolute duration-[400ms]' onClick={(e)=>{
+    <div className='black-overlay w-[100%] h-full fixed duration-400 z-[999999999]' onClick={hideSideMenu} style={{opacity:toggle?1:0, visibility:toggle?'visible':'hidden'}}>
+        <div className='w-[440px] md:w-[480px] h-full bg-white absolute duration-[400ms]' onClick={(e)=>{
             e.stopPropagation();
         }} style={{left:toggle?"0%":"-100%"}}>
-            <div className='w-[60%] mx-auto my-[30px] '>
+            <div className='w-[60%] mx-auto  my-[30px] '>
               <div>
                 <RxCross2 onClick={hideSideMenu} className='font-bold text-[25px] text-[#715d5a] cursor-pointer duration-800' />
               </div>
@@ -85,7 +85,7 @@ const Header = () => {
          <div className='text-[14px]'>
             <span className='font-bold text-[14px] border-b-[2px] border-black mr-[5px] hover:text-[#fc8522] hover:border-[#fc8522] cursor-pointer'>Raipur</span> Raipur, Chhattisgarh, India <RxCaretDown onClick={setVisible} className='inline font-bold text-2xl text-[#fc8522] cursor-pointer'/>
          </div>
-        <div className='flex m-auto list-none gap-[40px] mr-[10px] text-semibold'>
+        <div className='hidden md:flex m-auto list-none gap-[40px] mr-[10px] text-semibold'>
             {
                 listData.map((data,index)=>{
                   return <li key={index} className='flex items-center gap-2 hover:text-[#fc8522] cursor-pointer text-[14px] font-semibold'>

@@ -44,7 +44,7 @@ const BestCuisnes = () => {
                Best Cuisines Near Me
             </div>
             </div>
-            <div className='grid grid-cols-4 gap-3 text-center'>
+            <div className='grid grid-cols-2 md:grid-cols-4 gap-3 text-center'>
                 {data.map((value,index)=>{
                    return(
                     <div className='border shadow p-3 text-[15px]'>
