@@ -69,4 +69,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-Swiggy-clone URL  [Create React App]([https://github.com/facebook/create-react-app](https://swiggy-clone-by-raj.netlify.app/)).
+Swiggy-clone URL:  [https://swiggy-clone-by-raj.netlify.app/](https://swiggy-clone-by-raj.netlify.app/).
